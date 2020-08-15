@@ -1,10 +1,12 @@
 from discord.ext import commands, tasks
 
 import pytesseract
+import traceback
 import requests
 import numpy
 import json
 import cv2
+import sys
 
 POINTS = [(50, 220), (325, 495), (600, 770), (875, 1045)]
 EMOJIS = {
@@ -58,7 +60,8 @@ class Karuta(commands.Cog):
                         print("Attempting to pick %s [RANK%s]..." % (name, rank))
                         await message.add_reaction(EMOJIS[i])
             except Exception:
-                continue
+                print("Ignoring exception below", file=sys.stderr)
+                traceback.print_exc(file=sys.stderr)
 
     @karuta_watcher.before_loop
     async def prep_karuta_watcher(self):

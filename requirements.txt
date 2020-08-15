@@ -1,0 +1,24 @@
+aiohttp==3.6.2
+async-timeout==3.0.1
+attrs==19.3.0
+beautifulsoup4==4.9.1
+certifi==2020.6.20
+chardet==3.0.4
+discord==1.0.1
+discord.py==1.4.1
+idna==2.10
+mkl-fft==1.1.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+multidict==4.7.6
+numpy @ file:///C:/ci/numpy_and_numpy_base_1596215850360/work
+olefile==0.46
+opencv-python==4.4.0.40
+Pillow @ file:///C:/ci/pillow_1594298230227/work
+pytesseract==0.3.5
+requests==2.24.0
+six==1.15.0
+soupsieve==2.0.1
+urllib3==1.25.10
+wincertstore==0.2
+yarl==1.5.1
